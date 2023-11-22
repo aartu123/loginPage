@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8914e211fc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+<style>
+.btt1, .btt2{
+    width: 95%;
+    height: 40px;
+    border-radius: 30px;
+
+}
+
+.btt3{
+    cursor:pointer;
+    width: 95%;
+    height: 40px;
+    border-radius: 40px;
+    /* padding: 10px; */
+}
+
+.login{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid black;
+    border: none;
+    margin: auto;
+    margin-top: 200px;
+    background-color: rgb(39, 70, 70);
+    }
+
+    .ab{
+        position: relative;
+        top: -10px;
+        margin-right: 65%;
+    }
+    .fa-brands{
+        position: relative;
+        top: -55px;
+        margin-right: 55%;
+        font-size: 30px;
+        color: aqua;
+       
+    }
+.ivne3{
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    color: blue;
+}
+
+@media screen and (max-width: 500px) {
+    .login{
+        width: 80%;
+    }
+    .ab{ margin-right: 56%;}
+    .fa-brands{margin-right: 67%;}
+}
+
+   
+</style>
+</head>
+<body style="background-image: url(img3.jpg); ">
+    <div class="login">
+<div class="page" style="text-align: center;">
+   
+<h2 style="font-size: 30px; color: rgb(221, 214, 216);"><i>Login page </i></h2>
+<i class="fa-brands fa-square-twitter"></i>
+
+<input type="text" class="btt1" placeholder="yuor Name" required id="uname" ><br><br>
+<input type="text" class="btt2" placeholder="yuor pasword" required id="pword"><br><br>
+<hr style="width: 90%;"><br>
+<a href="Forget password" class="ab">Forget password</a>
+<input type="button" class="ivne3" placeholder="SEND" required onclick="fun1()" value="send">
+
+</div>
+</div>
+
+
+<script>
+    function fun1(){
+        const aanand=document.getElementById('uname').value
+        const aanandbagwan=document.getElementById('pword').value
+
+if (aanand=='' && aanandbagwan=='') {
+    alert('enter usrer name and psword')
+}
+else if  (aanand=='aman') {
+   alter('enter your password')
+}
+else if(aanand=='vinod' && aanandbagwan=='aman123'){
+    alert('enter your user name and password')
+}
+window.location='/text.html'
+}
+
+
+</script>
+
+</body>
+</html>
